@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maket homework</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="font/font.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -89,6 +91,69 @@
             </div>
         </section>
 
+        <section class="town">
+            <div class="town-container">
+                <div class="town-checked">
+                    <div class="checked-block">
+                        <input type="radio" name="tab" value="tab1" id="tabsOne" class="one-tabs">
+                        <span class="checked-name">Tab 1</span>
+                    </div>
+                    <div class="checked-block">
+                        <input type="radio" name="tab" value="tab1" id="tabsTwo">
+                        <span class="checked-name">Tab 2</span>
+                    </div>
+                    <div class="checked-block">
+                        <input type="radio" name="tab" value="tab1" id="tabsThree">
+                        <span class="checked-name">Tab 3</span>
+                    </div>
+                </div>
+
+                <div class="town-text-block" id="tabTextContentOne">
+                    <h2>Tabs 1 with soft transitioning effect.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                        penatibus et magnis dis parturient montes.
+
+                        <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet.</p>
+
+                    <a href="#">Download</a>
+                </div>
+
+                <div class="town-text-block" id="tabTextContentTwo">
+                    <h2>Tabs 2 with soft transitioning effect.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                        penatibus et magnis dis parturient montes.
+
+                        <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatem eaque
+                        mollitia quis repudiandae minus incidunt distinctio culpa odio earum.</p>
+
+                    <a href="#">Download</a>
+                </div>
+
+                <div class="town-text-block" id="tabTextContentThree">
+                    <h2>Tabs 3 with soft transitioning effect.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                        penatibus et magnis dis parturient montes.
+
+                        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laborum consequatur
+                        nulla, neque ea nemo, ex autem quas molestiae dolorem, voluptatum eius cumque aspernatur qui
+                        mollitia delectus. Qui, eius ex.</p>
+
+                    <a href="#">Download</a>
+                </div>
+
+                <div class="town-image">
+                    <img src="img/city.png" alt="city">
+                </div>
+            </div>
+        </section>
+
         <section id="about">
             <div>
 
@@ -130,7 +195,7 @@
                 <div class="mother_line">
                     <div class="line"></div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="small-top-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
             </div>
 
@@ -241,7 +306,7 @@
                 <div class="mother_line">
                     <div class="line"></div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="small-top-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
             </div>
 
@@ -297,7 +362,8 @@
                     <div class="mother_line_white">
                         <div class="line_white"></div>
                     </div>
-                    <p class="general_text">Use the sections you need, remove the ones you don't. Create gorgeous
+                    <p class="general_text small-top-text">Use the sections you need, remove the ones you don't. Create
+                        gorgeous
                         prototypes faster than ever!</p>
                     <a href="#" class="download-button">Download</a>
                 </div>
@@ -308,17 +374,18 @@
             <div class="header-form">
                 <h2>Contact Us</h2>
                 <div class="contact_line"></div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="small-top-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             </div>
             <form action="">
                 <div class="input-block">
                     <div class="left-form">
-                        <input type="text" name="Name" placeholder="Name">
-                        <input type="email" name="Email" placeholder="Email">
-                        <input type="text" name="Subject" placeholder="Subject">
+                        <input type="text" placeholder="Name" class="input-informationName">
+                        <input type="email" placeholder="Email" class="input-informationEmail">
+                        <input type="text" placeholder="Subject" class="input-informationSubject">
                     </div>
                     <div class="right-form">
-                        <textarea name="text-message" id="" placeholder="Message"></textarea>
+                        <textarea name="text-message" id="" placeholder="Message"
+                            class="input-informationMessage"></textarea>
                     </div>
                 </div>
                 <div class="button-submit-mother">
@@ -345,12 +412,17 @@
                     <a href="#" title="Rss"><i class="fa fa-rss" aria-hidden="true"></i></a>
                 </div>
                 <div class="author">
-                    <i class="fa fa-creative-commons" aria-hidden="true"> 2015 Axure Themes</i>
+                    <i class="fa fa-creative-commons " aria-hidden="true"><span class="small-top-text"> 2015 Axure
+                            Themes</span></i>
                 </div>
             </div>
         </footer>
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+
     <script src="js/js.js"></script>
 </body>
 

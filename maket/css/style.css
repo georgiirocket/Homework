@@ -79,8 +79,13 @@ main img {
 
 .name-theme {
   font-size: 20px;
+  font-family: "OpenSansBold";
   font-weight: 700;
   margin: 0 0 33px 0;
+}
+
+main div p {
+  font-family: "OpenSansRegular";
 }
 
 .another-baground {
@@ -138,8 +143,13 @@ main img {
   background-color: #d6d6d6;
 }
 
+.dark .download-button {
+  font-family: "OpenSansSemibold";
+}
+
 .second-name-theme {
   font-size: 36px;
+  font-family: "RalewayRegular";
   text-transform: uppercase;
   margin: 75px 0 30px 0;
 }
@@ -165,6 +175,10 @@ button {
   flex-direction: column;
   align-items: center;
   padding: 110px 0 80px 0;
+}
+
+.contact-form h2 {
+  font-family: "RalewayRegular";
 }
 
 .contact-form .header-form {
@@ -229,11 +243,17 @@ form {
   padding: 45px 0 0 0;
 }
 
+
+
 .button-submit {
   border-radius: 5px;
   opacity: 0.8;
   color: white;
   background-color: #ff8c2d;
+}
+
+.button-submit-mother .button-submit {
+  font-family: "OpenSansSemibold";
 }
 
 .button-submit:hover {
@@ -283,8 +303,39 @@ a:not(:last-child) {
   flex-direction: column;
 }
 
+.pricing_options div:nth-child(1) p {
+  color: #86878b;
+}
+
+.column div:nth-child(1) {
+  font-family: "OpenSansBold";
+}
+
+.column div:nth-child(5),
+.column div:nth-child(6),
+.column div:nth-child(7),
+.column div:nth-child(8),
+.column div:nth-child(9),
+.column div:nth-child(10),
+  {
+  font-family: "OpenSansRegular";
+}
+
+
+.pricing_options h2 {
+  font-family: "RalewayRegular";
+}
+
+h1 {
+  font-family: "RalewayRegular";
+}
+
 .pricing_options div p {
   text-align: center;
+}
+
+.column big div:nth-child(2) {
+  font-family: "RalewayBold";
 }
 
 h2 {
@@ -320,6 +371,7 @@ h2 {
 
 .another-color {
   color: #95969a;
+
 }
 
 span {
@@ -367,11 +419,17 @@ span {
 
 .column div:nth-child(3) p {
   font-style: italic;
+  font-family: "OpenSansSemibold";
   opacity: 0.7;
 }
 
+.column .orange p {
+  font-family: "OpenSansBold";
+}
+
 .column div:nth-child(2) p {
-  font-weight: bold;
+  font-family: "RalewayBold";
+  color: white;
 }
 
 header {
@@ -409,7 +467,7 @@ header {
 }
 
 .nav a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "OpenSansBold";
   font-size: 14px;
   color: #ffffff;
 }
@@ -457,6 +515,7 @@ header {
 
 .left-content .big-text {
   font-size: 36px;
+  font-family: "RalewayRegular";
   text-transform: uppercase;
   margin-bottom: 40px;
 }
@@ -474,6 +533,7 @@ header {
 
 .small-text {
   font-size: 16px;
+  font-family: "RalewayLight";
   opacity: 0.8;
   margin-bottom: 45px;
   font-family: Arial, Helvetica, sans-serif;
@@ -483,7 +543,7 @@ header {
   color: white;
   border: 1px solid white;
   padding: 15px 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "OpenSansSemibold";
 }
 
 .left-content a:hover {
@@ -516,7 +576,7 @@ header {
 
 .name-form p {
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "OpenSansBold";
   font-weight: bold;
 }
 
@@ -554,6 +614,7 @@ header {
 }
 
 .form-input label {
+  font-family: "OpenSansRegular";
   color: #d6d6d6;
   position: absolute;
   bottom: 10px;
@@ -563,6 +624,7 @@ header {
 
 .button-form {
   width: 100%;
+  font-family: "OpenSansSemibold";
   background-color: #ff8c2d;
   border: none;
   border-bottom-left-radius: 4px;
@@ -619,19 +681,45 @@ header {
 
 .left-social-block p:nth-child(1) {
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "OpenSansBold";
   font-weight: bold;
   color: #333333;
   margin-bottom: 15px;
 }
 
 .left-social-block p:nth-child(2) {
+  font-family: "OpenSansRegular";
   color: rgb(204, 204, 204);
 }
 
 .manager {
   flex-direction: column;
   align-items: center;
+}
+
+.manager h2 {
+  font-family: "RalewayRegular";
+}
+
+.manager-name p:first-child {
+  font-family: "OpenSansBold";
+}
+
+.manager-name p:last-child {
+  font-family: "OpenSansRegular";
+}
+
+.small-top-text {
+  font-family: "OpenSansRegular";
+  color: #86878b;
+}
+
+.author i span {
+  font-size: 12px;
+}
+
+.manager-top-block p {
+  font-family: "OpenSansRegular";
 }
 
 .manager-conteiner {
@@ -730,6 +818,10 @@ header {
   cursor: pointer;
 }
 
+.checked-block span {
+  font-family: "OpenSansBold";
+}
+
 .checked-block .checked-name {
   display: block;
   padding: 50px 0;
@@ -754,6 +846,7 @@ header {
 
 .town-text-block h2 {
   font-size: 20px;
+  font-family: "OpenSansBold";
   color: black;
   font-weight: bold;
   margin: 0 0 58px 0;
@@ -762,23 +855,45 @@ header {
 
 .town-text-block p {
   font-size: 14px;
+  font-family: "OpenSansRegular";
   color: #a6a7a9;
   margin: 0 0 52px 0;
 }
 
 .town-text-block a {
   color: white;
+  font-family: "OpenSansSemibold";
   padding: 15px 25px;
   background-color: #ff8b38;
   border-radius: 4px;
+}
+
+#about div p {
+  font-family: "OpenSansRegular";
+  color: #86878b;
 }
 
 .town-text-block a:hover {
   color: black;
 }
 
+
+
 .town-image img {
   max-width: 100%;
+}
+
+.town-text-block {
+  display: none;
+}
+
+.tab-active {
+  display: flex;
+}
+
+.placeholder-style {
+  font-family: "OpenSansRegular";
+  font-weight: bold;
 }
 
 
@@ -828,6 +943,10 @@ header {
     align-items: center;
     text-align: center;
     margin: 0 0 50px 0;
+  }
+
+  .town-image {
+    width: 100%;
   }
 }
 
