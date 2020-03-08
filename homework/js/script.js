@@ -1,45 +1,56 @@
-let str = 'Hello word';
-alert(str);
-str = 'Hi Jack';
-console.log(str);
+let str = "ШаЛАш";
 
-
-
-
-let number = 6;
-let string = 'Hello Holly';
-let answer = true;
-let p;
-let d = null;
-let object = {
-    name: 'Kitty',
-
-    toString: function () {
-        return 'Имя ' + this.name;
-    }
+function palindrome(word) {
+  let wordStop = word
+    .split("")
+    .reverse()
+    .join("");
+  if (word.toLowerCase() == wordStop.toLowerCase()) {
+    console.log("Слово палиндром");
+  } else {
+    console.log("Cлово непалиндром");
+  }
 }
 
-alert(number);
-alert(string);
-alert(answer);
-alert(p);
-alert(d);
-alert(object);
+palindrome(str);
 
-console.log(number);
-console.log(string);
-console.log(answer);
-console.log(p);
-console.log(d);
-console.log(object);
+function min(a, b) {
+  return a < b ? a : b;
+}
 
-let age = prompt('Введите свой возраст', 18);
-let ageFloor = Math.floor(age);
+function max(a, b) {
+  return a > b ? a : b;
+}
+console.log(min(10, 2));
+console.log(max(2, 10));
 
-alert(`Поздравляем вам ${ageFloor} полных лет`);
-
-if (ageFloor < 18) {
-    alert('Вы несовершеннолетний');
+//--------min if
+let a = 15;
+let b = 6;
+if (a < b) {
+  console.log(a);
 } else {
-    alert('Вы совершеннолетний');
+  console.log(b);
 }
+
+//-------max if
+if (a > b) {
+  console.log(a);
+} else {
+  console.log(b);
+}
+
+function replaceSimvol() {
+  let arr = [];
+  for (let i = 0; i < 10; i++) {
+    let randomNumber = Math.floor(100 * Math.random());
+    arr[i] = randomNumber;
+  }
+  let arrStr = arr.join(" ");
+  let z = /0/gi;
+  let newArrStr = arrStr.replace(z, "zero");
+  let result = newArrStr.split(" ");
+  console.log(result);
+}
+
+replaceSimvol();
