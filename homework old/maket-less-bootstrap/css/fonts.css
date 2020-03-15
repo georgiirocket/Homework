@@ -1,0 +1,84 @@
+@font-face {
+    font-family: GothamRoundedLight;
+    src: url('../fonts/ProximaNovaWebfont/Gotham\ Rounded\ Light.otf');
+}
+
+@font-face {
+    font-family: merriweather;
+    src: url('../fonts/ProximaNovaWebfont/merriweather.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-Black;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-Black.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-BlackIt;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-BlackIt.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-Bold;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-Bold.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-BoldIt;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-BoldIt.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-Extrabld;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-Extrabld.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-ExtrabldIt;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-ExtrabldIt.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-Light;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-Light.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-LightIt;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-LightIt.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-Regular;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-Regular.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-RegularIt;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-RegularIt.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-Semibold;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-Semibold.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-SemiboldIt;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-SemiboldIt.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-ThinIt;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNova-ThinIt.ttf');
+}
+
+@font-face {
+    font-family: ProximaNovaT-Thin;
+    src: url('../fonts/ProximaNovaWebfont/ProximaNovaT-Thin.ttf');
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url('../fonts/Open\ Sans\ Bold.ttf');
+}

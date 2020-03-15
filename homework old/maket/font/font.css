@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("font-file/Open\ Sans\ bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("font-file/Open\ Sans\ regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSansSemibold";
+    src: url("font-file/opensans-semibold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RalewayLight";
+    src: url("font-file/raleway-light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RalewayRegular";
+    src: url("font-file/Raleway\ regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RalewayBold";
+    src: url("font-file/RalewayBold.ttf") format("truetype");
+}
