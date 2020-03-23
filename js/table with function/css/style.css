@@ -1,0 +1,58 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    border: 1px solid black;
+
+}
+
+th {
+    border: none;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid black;
+    background: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    background: gray;
+}
+
+button:not(:last-child) {
+    margin-right: 10px;
+}
+
+#buttonInputBlock {
+    padding-bottom: 20px;
+}
+
+.smallButton {
+    padding: 2px;
+}
+
+textarea,
+input {
+    width: 100%;
+
+}
+
+.active-td {
+    background-color: gray;
+    padding: 15px;
+
+}
