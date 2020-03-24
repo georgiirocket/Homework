@@ -1,5 +1,4 @@
-var data = [
-  {
+var data = [{
     firstName: "Ashton",
     lastName: "Kutcher",
     age: 40
@@ -18,6 +17,7 @@ var data = [
 
 let arrProperties = Object.keys(data[0]);
 let body = document.body;
+let flag = false;
 let table = document.createElement("table");
 body.prepend(table);
 
@@ -36,13 +36,14 @@ buttonDel.after(buttonEdit);
 buttonEdit.innerHTML = "Edit User";
 
 buttonAdd.addEventListener("click", () => {
+
   let newObject = {};
   for (let i = 0; i < arrProperties.length; i++) {
     if (i == 0) {
       let inputOne = prompt("Input First Name");
       if (inputOne == "") {
         alert("Без имени нельзя зарегистрировать пользователя");
-        break;
+        return flag;
       } else {
         newObject[arrProperties[i]] = validateWord(inputOne);
       }
@@ -50,7 +51,8 @@ buttonAdd.addEventListener("click", () => {
     if (i == 1) {
       let inputTwo = prompt("Input Last Name");
       if (inputTwo == "") {
-        newObject[arrProperties[i]] = validateWord("-");
+        alert("Без фамилии нельзя зарегистрировать пользователя");
+        return flag;
       } else {
         newObject[arrProperties[i]] = validateWord(inputTwo);
       }
@@ -64,11 +66,15 @@ buttonAdd.addEventListener("click", () => {
       }
     }
   }
-  data.push(newObject);
-  table.remove();
-  table = document.createElement("table");
-  body.prepend(table);
-  paintTable();
+  if (!flag) {
+    data.push(newObject);
+    table.remove();
+    table = document.createElement("table");
+    body.prepend(table);
+    paintTable();
+  }
+
+
 });
 
 buttonDel.addEventListener("click", () => {
@@ -76,9 +82,9 @@ buttonDel.addEventListener("click", () => {
   for (let i = 0; i < table.rows.length; i++) {
     if (
       table.rows[i].cells[0].innerText.toLowerCase() ==
-        inputDeleteUser.toLowerCase() ||
+      inputDeleteUser.toLowerCase() ||
       table.rows[i].cells[1].innerText.toLowerCase() ==
-        inputDeleteUser.toLowerCase()
+      inputDeleteUser.toLowerCase()
     ) {
       data.splice(i - 1, 1);
     }
@@ -138,14 +144,7 @@ buttonEdit.addEventListener("click", () => {
                 body.prepend(table);
                 paintTable();
               } else {
-                data[i][`${Object.keys(data[i])[j]}`] = "-";
-                console.log();
-                table.remove();
-                addNameMode.remove();
-                buttonInputBlock.remove();
-                table = document.createElement("table");
-                body.prepend(table);
-                paintTable();
+                alert(`Данные были введены некорректно.\nНе оставляйте не заполненные строки`);
               }
             });
           }
