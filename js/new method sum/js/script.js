@@ -1,4 +1,4 @@
-let mass = [5, 's', 3, 10, 7, 1, 10];
+let mass = [5, 's', '10', 3, 10, 7, 1, 10];
 
 
 Array.prototype.sum = function () {
@@ -8,7 +8,12 @@ Array.prototype.sum = function () {
     for (let i = 0; i < this.length; i++) {
 
         if (isFinite(this[i])) {
-            arrResult.push(this[i]);
+            if (typeof (Number(this[i])) == 'number') {
+                arrResult.push(Number(this[i]));
+            } else {
+                arrResult.push(this[i]);
+            }
+
         }
     }
 
