@@ -1,0 +1,26 @@
+.custem_slider .outar_conteiner {
+  overflow: hidden;
+  margin: 0 auto;
+}
+.custem_slider .outar_conteiner .inner_container {
+  width: 8000px;
+  display: flex;
+}
+.custem_slider .one_slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custem_slider .one_slide img {
+  width: 100%;
+}
+.custem_slider .navs {
+  display: flex;
+  justify-content: center;
+}
+.custem_slider .navs > a {
+  text-decoration: none;
+}
+.custem_slider .navs .prev_slide {
+  margin-right: 20px;
+}
